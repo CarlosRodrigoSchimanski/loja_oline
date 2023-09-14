@@ -1,5 +1,5 @@
 from flask import Flask
-from .rout import apllyRout
+from .controllers import apllyRout
 
 app = Flask(__name__)
 
