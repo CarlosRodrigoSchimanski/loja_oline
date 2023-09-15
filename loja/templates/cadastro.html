@@ -1,0 +1,24 @@
+{% extends 'mod_cad_log.html'%}
+{% block content %}
+<form action="cadastro" method="post">
+    <div class="text">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" placeholder="Nome">
+    </div>
+    <div class="text">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" placeholder="Usuario">
+    </div>
+    <div class="text">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="Senha">
+    </div>
+    <div class="text">
+        <label for="c_senha">Confirma Senha</label>
+        <input type="password" name="c_senha" placeholder="Comfirma Senha">
+    </div>
+    <div class="bt">
+        <button class="cadastro">Cadastro</button>
+    </div>
+</form>
+{% endblock %}
