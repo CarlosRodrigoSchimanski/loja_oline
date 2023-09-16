@@ -1,5 +1,5 @@
 from flask import Flask, Blueprint
-from user.rotas import usuario_bluprint
+from .user.rotas import usuario_bluprint
 
 app = Flask(__name__)
 

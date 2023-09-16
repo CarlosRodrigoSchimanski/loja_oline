@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request
 
-usuario_bluprint = Blueprint('usuarios', __name__, template_folder='templates')
+usuario_bluprint = Blueprint('usuarios', __name__, template_folder='templates', static_folder='static')
 
 @usuario_bluprint.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
