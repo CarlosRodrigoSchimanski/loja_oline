@@ -1,6 +1,6 @@
-from flask import Flask
-from .controllers import apllyRout
+from flask import Flask, Blueprint
+from user.rotas import usuario_bluprint
 
 app = Flask(__name__)
 
-app = apllyRout(app)
+app.register_blueprint(usuario_bluprint)
